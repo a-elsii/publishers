@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   .block-center {
-    width: 768px;
+    width: 100%;
   }
 
   .header {
@@ -20,6 +20,7 @@
   }
   .header__logo {
     margin-right: 0;
+    width: 131px;
   }
   .header.active {
     right: 0;
@@ -27,6 +28,7 @@
 
   .nav {
     width: 100%;
+    height: auto;
     flex-direction: column;
     padding: 0;
     align-items: center;
@@ -112,6 +114,9 @@
   .whatYouGetUsingAdsy__title {
     font-size: 55px;
   }
+  .whatYouGetUsingAdsy__blockRight {
+    width: 100%;
+  }
 
   .footerImageLeft {
     display: none;
@@ -136,6 +141,9 @@
     grid-gap: 0;
   }
 
+  .popup {
+    width: 85%;
+  }
   .popup__leftBlock {
     font-size: 26px;
   }
@@ -144,7 +152,7 @@
   }
 
   .slick-next {
-    right: -5px;
+    right: -35px;
   }
 
   .slick-prev {

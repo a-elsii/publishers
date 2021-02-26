@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   .block-center {
-    width: 768px;
+    width: 100%;
   }
 
   .header {
@@ -21,6 +21,7 @@
 
     &__logo {
       margin-right: 0;
+      width: 131px;
     }
 
     &.active {
@@ -30,6 +31,7 @@
 
   .nav {
     width: 100%;
+    height: auto;
     flex-direction: column;
     padding: 0;
     align-items: center;
@@ -130,6 +132,10 @@
     &__title {
       font-size: 55px;
     }
+
+    &__blockRight {
+      width: 100%;
+    }
   }
 
   .footerImageLeft {
@@ -158,6 +164,7 @@
   }
 
   .popup {
+    width: 85%;
     &__leftBlock {
       font-size: 26px;
     }
@@ -168,7 +175,7 @@
   }
 
   .slick-next {
-    right: -5px;
+    right: -35px;
   }
   .slick-prev {
     left: -40px;
