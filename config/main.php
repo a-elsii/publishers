@@ -1,8 +1,6 @@
 <?php
 
-use yii\queue\beanstalk\Queue;
 use app\models\I18nUrlManager;
-use kartik\mpdf\Pdf;
 
 $params = require(__DIR__ . '/params-local.php');
 $db = require(__DIR__ . '/db-local.php');
@@ -14,7 +12,6 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => [
         'log',
-        'queue',
         'schema'
     ],
     'aliases' => [
@@ -67,18 +64,6 @@ $config = [
                 ],
             ],
         ],
-        'queue' => [
-            'class' => Queue::class,
-            'host' => 'localhost',
-            'port' => 11300,
-            'tube' => 'queue',
-        ],
-        'pdf' => [
-            'class' => Pdf::classname(),
-            'format' => Pdf::FORMAT_A4,
-            'orientation' => Pdf::ORIENT_PORTRAIT,
-            'destination' => Pdf::DEST_BROWSER,
-        ],
         'urlManager' => [
             'hostInfo' => AA_URL,
             'class' => I18nUrlManager::class,
@@ -101,10 +86,6 @@ $config = [
         */
     ],
     'modules' => [
-        'admin' => [
-            'class' => 'app\modules\admin\Module',
-            'layout' => '@app/modules/admin/views/layouts/main',
-        ],
         'schema' => [
             'class' => 'simialbi\yii2\schemaorg\Module',
             //'source' => 'http://schema.org/docs/full.html',
