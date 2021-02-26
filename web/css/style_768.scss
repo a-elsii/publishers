@@ -1,0 +1,178 @@
+@media screen and (max-width: 768px) {
+  .block-center {
+    width: 768px;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 100vh;
+    background: #ededed;
+    right: 100%;
+    transition: .7s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__top {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin-right: 0;
+    }
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  .nav {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+
+    &__items {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  .blockIconOpen {
+    display: flex;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    z-index: 4;
+  }
+
+  .block1 {
+    height: 430px;
+    margin-bottom: 60px;
+    &__title {
+      font-size: 70px;
+      margin: 0;
+    }
+
+    &__line {
+      display: none;
+    }
+
+    &__mainBlock {
+      display: flex;
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  .blockHowItWork {
+    &__informationTop {
+      width: 95%;
+    }
+
+    &__information {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    &__lineNumber {
+      width: 70%;
+    }
+
+    &__blockTitle {
+      margin-bottom: 50px;
+      justify-content: center;
+    }
+
+    &__title {
+      margin-left: 0;
+    }
+
+    &__line {
+      display: none;
+    }
+  }
+
+  .whatYouGetUsingAdsy {
+
+    padding-top: 50px;
+    height: auto;
+    &__line {
+      display: none;
+    }
+
+    &__blockLeft {
+      display: none;
+    }
+
+    &__mainBlock {
+      right: 0;
+      width: 84%;
+      margin: 0 auto;
+    }
+
+    &__blockTitle {
+      left: 0;
+      margin-bottom: 50px;
+    }
+
+    &__informationBottom {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 55px;
+    }
+  }
+
+  .footerImageLeft {
+    display: none;
+  }
+
+  .footer__textRight {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+
+    &__mainBlockItem {
+      width: 300px;
+      margin-top: 50px;
+    }
+
+    &__mainBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-template-columns: 0;
+      grid-gap: 0;
+    }
+  }
+
+  .popup {
+    &__leftBlock {
+      font-size: 26px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .slick-next {
+    right: -5px;
+  }
+  .slick-prev {
+    left: -40px;
+  }
+
+
+}

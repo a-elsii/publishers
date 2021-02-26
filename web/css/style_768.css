@@ -1,0 +1,155 @@
+@media screen and (max-width: 768px) {
+  .block-center {
+    width: 768px;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 100vh;
+    background: #ededed;
+    right: 100%;
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__top {
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .header.active {
+    right: 0;
+  }
+
+  .nav {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+  .nav__items {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .blockIconOpen {
+    display: flex;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    z-index: 4;
+  }
+
+  .block1 {
+    height: 430px;
+    margin-bottom: 60px;
+  }
+  .block1__title {
+    font-size: 70px;
+    margin: 0;
+  }
+  .block1__line {
+    display: none;
+  }
+  .block1__mainBlock {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .blockHowItWork__informationTop {
+    width: 95%;
+  }
+  .blockHowItWork__information {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .blockHowItWork__lineNumber {
+    width: 70%;
+  }
+  .blockHowItWork__blockTitle {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .blockHowItWork__title {
+    margin-left: 0;
+  }
+  .blockHowItWork__line {
+    display: none;
+  }
+
+  .whatYouGetUsingAdsy {
+    padding-top: 50px;
+    height: auto;
+  }
+  .whatYouGetUsingAdsy__line {
+    display: none;
+  }
+  .whatYouGetUsingAdsy__blockLeft {
+    display: none;
+  }
+  .whatYouGetUsingAdsy__mainBlock {
+    right: 0;
+    width: 84%;
+    margin: 0 auto;
+  }
+  .whatYouGetUsingAdsy__blockTitle {
+    left: 0;
+    margin-bottom: 50px;
+  }
+  .whatYouGetUsingAdsy__informationBottom {
+    display: flex;
+    justify-content: center;
+  }
+  .whatYouGetUsingAdsy__title {
+    font-size: 55px;
+  }
+
+  .footerImageLeft {
+    display: none;
+  }
+
+  .footer__textRight {
+    display: none;
+  }
+
+  .footer {
+    height: auto;
+  }
+  .footer__mainBlockItem {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .footer__mainBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: 0;
+    grid-gap: 0;
+  }
+
+  .popup__leftBlock {
+    font-size: 26px;
+  }
+  .popup__title {
+    font-size: 28px;
+  }
+
+  .slick-next {
+    right: -5px;
+  }
+
+  .slick-prev {
+    left: -40px;
+  }
+}
+
+/*# sourceMappingURL=style_768.css.map */
